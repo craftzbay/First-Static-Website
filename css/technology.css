@@ -1,0 +1,84 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: grey;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #4d4d4d;
+}
+.container{
+	width: 1280px;
+	margin: 30px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 30px;
+}
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.container .box .imgbox{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgbox img{
+	max-width: 100%;
+	transition: transform 2s;
+}
+.container .box:hover .imgbox img
+{
+	transform: scale(1.2);
+}
+.container .box .detials{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,0.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .detials{
+	transform: scaleY(1);
+}
+.container .box .detials .box-content{
+	 position: absolute;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 text-align: center;
+	 padding: 15px;
+	 color: #fff;
+}
+.container .box .detials .box-content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+}
+.container .box .detials .box-content p{
+	margin: 10px 0 0;
+	padding: 0;
+	color: grey;
+}
+.container .box .detials .box-content a{
+	text-decoration: none;
+	cursor: pointer;
+	background: #666666;
+	border-color: transparent;
+	color: #fff;
+	padding: 10px;
+	margin-right: -160px;
+}
+.container .box .detials .box-content a:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}

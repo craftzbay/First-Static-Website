@@ -1,0 +1,281 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #4d4d4d;
+}
+section.sec1{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 30px;	
+	background-color: #f4f4f4;
+	color: #666;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	background-color:#262626;
+	background-position: center;
+	/*bolohui bol fixed bolgoh*/
+	position: relative;
+	margin: 0;
+	text-align: center;
+}
+nav.black{
+	background: rgba(0,0,0,0.8);
+	height: 70px;
+	width: 100%;
+}
+nav .logo{
+	padding: 22px 20px;
+	height: 70px;
+	float: left;
+	font-size: 24px;
+	color: white;
+}
+nav.black .logo{
+	color: white;
+}
+nav ul{
+	display: flex;
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+nav ul li a{
+	/*line-height: 80px;
+	padding: 0 30px;
+	transition: 0.3s;*/
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+	display: block;
+}
+nav ul li:hover{
+	background-color: #282e34;
+}
+nav ul ul{
+	position: absolute;
+	width: 200px;
+	background-color: #b3b3b3;
+	margin-top: 20px;
+	margin-left: -20px; 
+	text-align: left;
+	display: none;
+}
+nav ul ul li{
+	display: block;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav.black ul li a{
+	color: #fff;
+}
+nav ul li a:focus{
+	outline: none;
+}
+
+
+
+
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*
+	fixed = parallax
+	scroll = normal
+	*/
+	background-attachment: fixed;
+}
+
+.pimg1{
+	background-image: url('../images/a.jpg');
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('../images/a1.jpeg');
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('../images/a2.jpeg');
+	min-height: 400px;
+}
+.pimg4{
+	background-image: url('../images/a3.jpeg');
+	min-height: 400px;
+}
+.section{
+	text-align: center;
+	padding: 40px 60px;
+}
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.ptext .border{
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+}
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+@media(max-width: 586px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
+.content p{
+	width: 75%;
+	text-align: justify;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.content h2{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #0d0d0d;
+	padding: 20px 0;
+}
+.footer-icon{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-icon ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.footer-icon ul li{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background-color: #d9d9d9;
+}
+.footer-icon ul li a{
+	color: #272727;
+	font-size: 25px;
+}
+.footer-icon ul li a i{
+	line-height: 35px;
+}
+.footer-icon ul li:hover{
+	background-color: grey;
+	color: white;
+}
+
+.footer-menu{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-menu ul{
+	margin-top: 10px;
+	padding: 0;
+	text-align: center;
+}
+.footer-menu ul li{
+	display: inline-block;
+	margin: 0 20px;
+	margin-top: 10px;
+}
+.footer-menu ul li a{
+	font-family: Verdana;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+}
+.footer-menu ul li a:hover{
+	font-size: 25px;
+	color: grey;
+}
+.footer-bottom{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: grey;	
+	font-family: Verdana;
+	color: #0d0d0d;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}
+.footer-bottom:hover{
+	width: 100%;
+	background-color: black;
+	color: #fff;
+}
+button{
+	position: fixed;
+	bottom: 80px;
+	right: 5px;
+	font-size: 14px;
+	background-color: #eee;
+	outline: none;
+	border: 0 solid #999;
+	padding: 10px 20px; 
+	cursor: pointer;
+}
+button a{
+	text-decoration: none;
+	color: black;
+}
+button:hover{
+	color: #fff;
+	background-color: #333;
+}

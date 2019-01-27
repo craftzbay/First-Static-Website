@@ -1,0 +1,12 @@
+body{
+	background: #f4f4f4;
+}
+.images a{
+	padding-left: 12.5%;
+}
+.video embed{
+	padding-left: 12.5%;
+	padding-bottom: 2%;
+	width: 74%;
+	height: 600px;
+}
